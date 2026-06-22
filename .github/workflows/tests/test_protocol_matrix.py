@@ -109,23 +109,23 @@ def test_ensure_binary_executable_ignores_non_binary(tmp_path):
 def test_parse_agent_csv_handles_empty_values_and_whitespace():
     assert parse_agent_csv(None) == []
     assert parse_agent_csv("") == []
-    assert parse_agent_csv(" codex-acp, crow-cli ,, gemini ") == [
+    assert parse_agent_csv(" codex-acp, crow-cli ,, qwen-code ") == [
         "codex-acp",
         "crow-cli",
-        "gemini",
+        "qwen-code",
     ]
 
 
 def test_select_agents_applies_include_and_skip_filters():
-    agents = [{"id": "codex-acp"}, {"id": "crow-cli"}, {"id": "gemini"}]
+    agents = [{"id": "codex-acp"}, {"id": "crow-cli"}, {"id": "qwen-code"}]
 
     selected, unknown_skip = select_agents(
         agents,
-        include_csv="codex-acp,crow-cli,gemini",
+        include_csv="codex-acp,crow-cli,qwen-code",
         skip_csv="crow-cli",
     )
 
-    assert [agent["id"] for agent in selected] == ["codex-acp", "gemini"]
+    assert [agent["id"] for agent in selected] == ["codex-acp", "qwen-code"]
     assert unknown_skip == []
 
 

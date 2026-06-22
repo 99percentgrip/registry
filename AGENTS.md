@@ -116,7 +116,7 @@ uv run .github/workflows/update_versions.py
 uv run .github/workflows/update_versions.py --apply
 
 # Check specific agents only
-uv run .github/workflows/update_versions.py --agents gemini,github-copilot
+uv run .github/workflows/update_versions.py --agents qwen-code,github-copilot
 ```
 
 The workflow can also be triggered manually via GitHub Actions with options to apply updates and filter by agent IDs.
@@ -132,7 +132,7 @@ Update `agent.json`:
 
 - Update the `version` field
 - Update version in all distribution URLs (use replace-all for consistency)
-- For npm: update `package` field (e.g., `@google/gemini-cli@0.22.5`)
+- For npm: update `package` field (e.g., `@qwen-code/qwen-code@0.18.5`)
 - For binaries: update archive URLs with new version/tag
 
 Run build to validate: `uv run --with jsonschema .github/workflows/build_registry.py`

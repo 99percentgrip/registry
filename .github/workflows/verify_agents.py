@@ -956,7 +956,7 @@ def main():
         epilog="""
 Examples:
   %(prog)s                          # Verify all agents (basic launch test)
-  %(prog)s -a claude-acp,gemini     # Verify specific agents (comma-separated)
+  %(prog)s -a claude-acp,qwen-code  # Verify specific agents (comma-separated)
   %(prog)s -t npx                   # Verify only npx distributions
   %(prog)s --clean                  # Clean sandboxes before running
   %(prog)s --clean-all              # Remove all sandboxes and exit

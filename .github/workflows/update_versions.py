@@ -10,7 +10,7 @@ Usage:
     python .github/workflows/update_versions.py --apply
 
     # Check specific agents
-    python .github/workflows/update_versions.py --agents gemini,goose
+    python .github/workflows/update_versions.py --agents qwen-code,goose
 
 Environment variables:
     GITHUB_TOKEN: GitHub token for API requests (increases rate limit)

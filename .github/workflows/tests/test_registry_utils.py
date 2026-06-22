@@ -25,10 +25,10 @@ from registry_utils import (
 
 class TestExtractNpmPackageName:
     def test_scoped_with_version(self):
-        assert extract_npm_package_name("@google/gemini-cli@0.30.0") == "@google/gemini-cli"
+        assert extract_npm_package_name("@example/some-package@0.30.0") == "@example/some-package"
 
     def test_scoped_without_version(self):
-        assert extract_npm_package_name("@google/gemini-cli") == "@google/gemini-cli"
+        assert extract_npm_package_name("@example/some-package") == "@example/some-package"
 
     def test_unscoped_with_version(self):
         assert extract_npm_package_name("some-package@1.2.3") == "some-package"
@@ -42,10 +42,10 @@ class TestExtractNpmPackageName:
 
 class TestExtractNpmPackageVersion:
     def test_scoped_with_version(self):
-        assert extract_npm_package_version("@google/gemini-cli@0.30.0") == "0.30.0"
+        assert extract_npm_package_version("@example/some-package@0.30.0") == "0.30.0"
 
     def test_scoped_without_version(self):
-        assert extract_npm_package_version("@google/gemini-cli") is None
+        assert extract_npm_package_version("@example/some-package") is None
 
     def test_unscoped_with_version(self):
         assert extract_npm_package_version("some-package@1.2.3") == "1.2.3"
