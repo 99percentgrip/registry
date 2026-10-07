@@ -6,29 +6,29 @@
   "distribution": {
     "binary": {
       "darwin-aarch64": {
-        "archive": "https://github.com/99percentgrip/agent-vesper/releases/download/v0.24.8/agent-vesper-acp-darwin-aarch64.tar.gz",
+        "archive": "https://github.com/99percentgrip/agent-vesper/releases/download/v0.24.9/agent-vesper-acp-darwin-aarch64.tar.gz",
         "cmd": "./agent-vesper-acp/agent-vesper-acp",
-        "sha256": "aa0f3ca68a9aaa49f73d1075828e69468f592e9dcc69b1e85f55e5df7988d7fb"
+        "sha256": "7265673538d4e2aa63d0a1b27733ee8fca47e5398b20372baa8857d9cc72d2e9"
       },
       "darwin-x86_64": {
-        "archive": "https://github.com/99percentgrip/agent-vesper/releases/download/v0.24.8/agent-vesper-acp-darwin-x86_64.tar.gz",
+        "archive": "https://github.com/99percentgrip/agent-vesper/releases/download/v0.24.9/agent-vesper-acp-darwin-x86_64.tar.gz",
         "cmd": "./agent-vesper-acp/agent-vesper-acp",
-        "sha256": "cd8ae751cf0a755bdea22152371cce60ee46d476ef283571bbd0339e5fef001f"
+        "sha256": "25d998d182f8c945c622e126a50d3386298588668ef254df9ea11e9e5dedc4b8"
       },
       "linux-aarch64": {
-        "archive": "https://github.com/99percentgrip/agent-vesper/releases/download/v0.24.8/agent-vesper-acp-linux-aarch64.tar.gz",
+        "archive": "https://github.com/99percentgrip/agent-vesper/releases/download/v0.24.9/agent-vesper-acp-linux-aarch64.tar.gz",
         "cmd": "./agent-vesper-acp/agent-vesper-acp",
-        "sha256": "e31755cf19fa3f3fb5de4556649799867818f3259a19d7d3b7454051acf133b1"
+        "sha256": "c5d68e77736a2304425c8909cd69079218a203feb2e6401fb633dc86c23c50cc"
       },
       "linux-x86_64": {
-        "archive": "https://github.com/99percentgrip/agent-vesper/releases/download/v0.24.8/agent-vesper-acp-linux-x86_64.tar.gz",
+        "archive": "https://github.com/99percentgrip/agent-vesper/releases/download/v0.24.9/agent-vesper-acp-linux-x86_64.tar.gz",
         "cmd": "./agent-vesper-acp/agent-vesper-acp",
-        "sha256": "b78ed9220a891b1285c26fa9a57d60209c70acb12d81f38ca0dc0dd2ac37477a"
+        "sha256": "33067ef205667cc4aa3fa3dfec30599b8547c18d58f3241ecdce74549aaf8e9d"
       },
       "windows-x86_64": {
-        "archive": "https://github.com/99percentgrip/agent-vesper/releases/download/v0.24.8/agent-vesper-acp-windows-x86_64.zip",
+        "archive": "https://github.com/99percentgrip/agent-vesper/releases/download/v0.24.9/agent-vesper-acp-windows-x86_64.zip",
         "cmd": "./agent-vesper-acp/agent-vesper-acp.exe",
-        "sha256": "ca16c02767a5a3e15cb0b308b613c42af4689a608bf9a1082d7a55f43e26d20e"
+        "sha256": "5793fbb6ff05dfafb966b0bfd7bde757cc6cc576c500761964bf536d95bac3fd"
       }
     }
   },
@@ -37,6 +37,6 @@
   "license_url": "https://github.com/99percentgrip/agent-vesper/blob/main/LICENSE",
   "name": "Agent Vesper",
   "repository": "https://github.com/99percentgrip/agent-vesper",
-  "version": "0.24.8",
+  "version": "0.24.9",
   "website": "https://github.com/99percentgrip/agent-vesper"
 }
